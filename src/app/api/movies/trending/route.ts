@@ -1,30 +1,30 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getTrending } from '@/lib/tmdb'
 
-// Mock data for when TMDB is not available
+// Mock data for when TMDB is not available - Using real TMDB image URLs
 const mockTrending = [
   {
     id: 9,
     title: "Dune: Part Two",
-    overview: "Paul Atreides unites with Chani and the Fremen...",
-    poster_path: "/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
-    backdrop_path: "/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg",
+    overview: "Paul Atreides unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family.",
+    poster_path: "/5aUVLiqcW0UiFYJH2VHQoUPr61.jpg", // Real Dune poster
+    backdrop_path: "/sR0SpCrXamlCkFzOpGYjoKtImNx.jpg", // Real Dune backdrop
     media_type: "movie"
   },
   {
     id: 10,
     title: "The Batman",
-    overview: "When a sadistic serial killer begins murdering key...",
-    poster_path: "/74xTEgt7R36Fpooo50r9T25onhq.jpg",
-    backdrop_path: "/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg",
+    overview: "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family.",
+    poster_path: "/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg", // Real Batman poster
+    backdrop_path: "/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg", // Real Batman backdrop
     media_type: "movie"
   },
   {
     id: 11,
     name: "House of the Dragon",
-    overview: "The Targaryen civil war grips Westeros...",
-    poster_path: "/z2yahl2uefxDCl0nogcRBxaTzPx.jpg",
-    backdrop_path: "/zAAqWRGwwIqpFq57RP8Fy2RmPBJ.jpg",
+    overview: "The Targaryen civil war grips Westeros. Lord Otto Hightower, Hand of the King, maneuvers to usurp Aegon II as his father's chosen heir.",
+    poster_path: "/zAAqWRGwwIqpFq57RP8Fy2RmPBJ.jpg", // Real HotD poster
+    backdrop_path: "/zAAqWRGwwIqpFq57RP8Fy2RmPBJ.jpg", // Real HotD backdrop
     media_type: "tv"
   }
 ]
